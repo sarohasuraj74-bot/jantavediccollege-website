@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quizzes - Suraj Saroha</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function checkAnswer(q, ans) {
+      let selected = document.querySelector('input[name="'+q+'"]:checked');
+      if (!selected) { alert("Please select an answer!"); return; }
+      if (selected.value === ans) {
+        alert("Correct Answer ✅");
+      } else {
+        alert("Wrong Answer ❌");
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Daily Quizzes & Mock Tests</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="quiz.html">Quizzes</a>
+      <a href="contact.html">Contact</a>
+      <a href="help.html">Help</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>BSc Biology Quiz</h2>
+    <p>Q1. What is the powerhouse of the cell?</p>
+    <input type="radio" name="q1" value="Nucleus"> Nucleus <br>
+    <input type="radio" name="q1" value="Mitochondria"> Mitochondria <br>
+    <input type="radio" name="q1" value="Ribosome"> Ribosome <br>
+    <button onclick="checkAnswer('q1','Mitochondria')">Submit</button>
+
+    <h2>BSc Maths Quiz</h2>
+    <p>Q1. What is the derivative of x²?</p>
+    <input type="radio" name="q2" value="x"> x <br>
+    <input type="radio" name="q2" value="2x"> 2x <br>
+    <input type="radio" name="q2" value="x²"> x² <br>
+    <button onclick="checkAnswer('q2','2x')">Submit</button>
+  </main>
+</body>
+</html>
