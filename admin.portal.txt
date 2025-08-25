@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Admin Portal 👑</h1></header>
+
+  <section>
+    <h2>All Members</h2>
+    <ul id="members-list"></ul>
+
+    <h2>Manage Quizzes</h2>
+    <textarea placeholder="Write new quiz here..."></textarea>
+    <button>Add Quiz</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

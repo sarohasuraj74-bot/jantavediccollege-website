@@ -1,0 +1,24 @@
+function checkAnswer(button) {
+  if (button.innerText === "Mitochondria") {
+    alert("Correct ✅");
+  } else {
+    alert("Wrong ❌");
+  }
+}
+
+function requestHelp() {
+  document.getElementById("help-status").innerText =
+    "Help request sent! 📢 Everyone notified.";
+}
+
+function loginUser(event) {
+  event.preventDefault();
+  const user = document.getElementById("username").value;
+  const pass = document.getElementById("password").value;
+
+  if (user === "admin" && pass === "1234") {
+    window.location.href = "admin.html";
+  } else {
+    document.getElementById("login-status").innerText = "Invalid login ❌";
+  }
+}
